@@ -1,0 +1,85 @@
+Changelog Beta 2
+
+Header
+- Complete redesign
+- Removed individual buttons for pre-login page
+- Home button replaced with an educater image logo placed in the middle of the header where when clicked redirects to index.html
+- Login button moved to the very right side of the header accompanied with a Register Now button, highlighted.
+- Resources, FAQ, and Blog were integrated into a dropdown menu labeled Resources where when hovered over produces the following items: Blog, Education Resources, and FAQ. When clicked they will lead to their respective HTML's, Education Resources redirects to resources.html
+- An explore the planet hover button was added where under it is: World Map, US Map, Help, and Selecting your Country where it gives you info and lets you find the direct course curriculum for your country/state with support and helpful documentation with steps.
+
+Styling
+- subtracted around 75 lines of useless CSS that did not code for anything or coded for something insignificant from styles.css
+- Added <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"> to all HTML files to code for the special symbols for the dropdown menu header
+- Added some gradients and the new header was a much more aesthetic MAINLY white + green lines combo instead of the MAINLY green + white lines combo
+- Designed a new educaterlogo and hellohalfbg in the renamed img folder (used to be imageassets folder)
+
+us_map.html
+- .svg --> .html
+- Interactive SVG files, when a certain state is clicked it will redirect to a HTML file containing all 50 states namedc ourse_catalog_[state 2 letter abbreviation].html in a usa folder located in countries folder located in the educater folder. 
+
+world_map.html
+- .svg --> .html
+- Interactive SVG files, when a certain country is clicked it will redirect to a HTML file containing around 50 other countries 
+named course_catalog_[country].html in a countries folder located in the educater folder. 
+- Added ~50 course catalog HTML files so when supported countries are clicked, it will redirect to a course catalog
+- To find supported countries, visit educateroutreach.txt or contact our International Relations Outreach Director (IROD)
+- When the United States is clicked, it will send you to us_map.html where you will select the state you are in as well for a more precise and direct course catalog
+- Bosnia and Herzegovina will be split into Bosnia as one zone and Herzegovina as the other.
+
+hello.html
+- Customized and Photoshopped a new picture to add as the half-background. It composes of "society-changing" events that largely changed the social norms.
+
+index.html
+- Redesigned page to show important information instead of FAQ, more important contributions to this page is coming
+- Changed the header
+- ~5 bug fixes
+
+dashboard.html
+- Changed the header 
+- ~5 bug fixes
+
+resources.html
+- Removed USCIS offices as this is meant to be an international website, got 'Schools Near You' Google Maps to work. There may be bugs with this and it also may not truly highlight schools around you because of your location
+- Changed the header
+- Bug where boxes weren't opening fully, fixed
+
+faq.html
+- Added a contact form and more questions for the FAQ
+- Changed the header
+- Bug where boxes weren't opening fully, fixed
+
+login.html
+- Complete redesign with smooth transitioning and aesthetic graphics
+- Added Google login via Firebase with Google logo next to it
+- Changed the header
+- Bug where Google register was not working, fixed
+- Text size and padding bug, fixed
+- Bug where the sign in/sign up button was not transitioning to the sign in/create account sector of the html
+
+register.html
+- Complete redesign with smooth transitioning and aesthetic graphics
+- Added Google login via Firebase with Google logo next to it
+- Changed the header
+- Made it so when you click Register Now it redirects to register.html (reversed login.html, still transitions)
+- Same bug fixes as login.html
+
+user_settings.html
+- Added a place for users to adjust their current settings
+
+blog.html
+- Added a blog where we will frequently upload articles on our thoughts on world issues or the next steps for EduCater
+
+README.md
+- Added legal
+- Added contributions
+- Added roles
+
+**Considered, but then Deleted**
+your_courses.html was drafted as an HTML file and coded for, unfortunately, it was deleted as the code for it was messed up and it was overall in need of a total redesign
+
+Username tab at the top was removed as part of the old header for the new header reintegration, will be added again later with a new redesign
+
+**We are working on registering as a 501(c)(3). Donating to EduCater would potentially qualify you for tax exemptions! Seriously consider it, please. Running EduCater is time consuming and expensive**
+
+

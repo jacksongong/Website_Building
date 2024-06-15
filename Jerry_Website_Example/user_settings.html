@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Update Profile - EduCater</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+    <style>
+        .content-section {
+            background-color: #fff;
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+            margin: 120px auto;
+            max-width: 800px;
+            text-align: center;
+        }
+
+        .content-section h2 {
+            margin-bottom: 20px;
+        }
+
+        .content-section form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .content-section label {
+            margin: 10px 0 5px;
+            width: 100%;
+            text-align: left;
+        }
+
+        .content-section input {
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            width: 100%;
+            max-width: 500px;
+        }
+
+        .content-section .btn {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-weight: bold;
+            width: 100%;
+            max-width: 200px;
+        }
+
+        .content-section .btn:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="navbar">
+            <div class="left-nav">
+                <ul>
+                    <li class="dropdown">
+                        <a href="world_map.html" class="dropbtn">Explore the Planet <i class="fas fa-chevron-down"></i></a>
+                        <div class="dropdown-content">
+                            <a href="world_map.html">World Map</a>
+                            <a href="us_map.html">United States Map</a>
+                            <a href="#">Help</a>
+                            <a href="#">Selecting your Country</a>
+                        </div>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropbtn">Resources <i class="fas fa-chevron-down"></i></a>
+                        <div class="dropdown-content">
+                            <a href="blog.html">Blog</a>
+                            <a href="resources.html">Education Resources</a>
+                            <a href="faq.html">FAQ</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="logo">
+                <a href="index.html">
+                    <img src="img/educaterlogo.png" alt="EduCater Logo">
+                </a>
+            </div>
+            <div class="right-actions">
+                <div class="actions">
+                    <a href="login.html" class="login">Log In</a>
+                    <a href="register.html" class="signup">Register Now</a>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section class="content-section">
+            <h2>Update Profile</h2>
+            <form id="update-profile-form">
+                <label for="first-name">First Name:</label>
+                <input type="text" id="first-name" name="first-name" required>
+                
+                <label for="last-name">Last Name:</label>
+                <input type="text" id="last-name" name="last-name" required>
+                
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username" required>
+                
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required>
+                
+                <label for="confirm-password">Confirm Password:</label>
+                <input type="password" id="confirm-password" name="confirm-password" required>
+                
+                <label for="dob">Date of Birth:</label>
+                <input type="date" id="dob" name="dob" required>
+                
+                <button type="submit" class="btn">Update Profile</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 EduCater. All rights reserved.</p>
+    </footer>
+</body>
+</html>

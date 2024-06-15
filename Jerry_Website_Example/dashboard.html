@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EduCater - Dashboard</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+</head>
+<body>
+    <header>
+        <div class="navbar">
+            <div class="left-nav">
+                <ul>
+                    <li class="dropdown">
+                        <a href="world_map.html" class="dropbtn">Explore the Planet <i class="fas fa-chevron-down"></i></a>
+                        <div class="dropdown-content">
+                            <a href="world_map.html">World Map</a>
+                            <a href="us_map.html">United States Map</a>
+                            <a href="#">Help</a>
+                            <a href="#">Selecting your Country</a>
+                        </div>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropbtn">Resources <i class="fas fa-chevron-down"></i></a>
+                        <div class="dropdown-content">
+                            <a href="blog.html">Blog</a>
+                            <a href="resources.html">Education Resources</a>
+                            <a href="faq.html">FAQ</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="logo">
+                <a href="index.html">
+                    <img src="img/educaterlogo.png" alt="EduCater Logo">
+                </a>
+            </div>
+            <div class="right-actions">
+                <div class="actions">
+                    <a href="login.html" class="login">Log In</a>
+                    <a href="register.html" class="signup">Register Now</a>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section class="dashboard">
+            <h2>Welcome, [User]</h2>
+            <p>This is your dashboard. Here you can access your courses, track your progress, and update your profile.</p>
+            <div class="dashboard-cards">
+                <div class="card">
+                    <h3>Your Courses</h3>
+                    <p>View and manage your courses.</p>
+                    <a href="#" class="btn">Go to Courses</a>
+                </div>
+                <div class="card">
+                    <h3>Your Progress</h3>
+                    <p>Track your learning progress.</p>
+                    <a href="#" class="btn">View Progress</a>
+                </div>
+                <div class="card">
+                    <h3>Update Profile</h3>
+                    <p>Update your personal information.</p>
+                    <a href="#" class="btn">Update Profile</a>
+                </div>
+            </div>
+        </section>
+        <section id="courses" style="display: none;">
+            <h2>Your Courses</h2>
+            <p>Details about your courses...</p>
+        </section>
+        <section id="progress" style="display: none;">
+            <h2>Your Progress</h2>
+            <p>Details about your progress...</p>
+        </section>
+        <section id="profile" style="display: none;">
+            <h2>Update Profile</h2>
+            <p>Details about updating your profile...</p>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 EduCater. All rights reserved.</p>
+    </footer>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            document.getElementById('courses-link').addEventListener('click', function() {
+                showSection('courses');
+            });
+
+            document.getElementById('progress-link').addEventListener('click', function() {
+                showSection('progress');
+            });
+
+            document.getElementById('profile-link').addEventListener('click', function() {
+                showSection('profile');
+            });
+
+            function showSection(sectionId) {
+                var sections = ['dashboard', 'courses', 'progress', 'profile'];
+                sections.forEach(function(id) {
+                    document.getElementById(id).style.display = id === sectionId ? 'block' : 'none';
+                });
+            }
+        });
+    </script>
+</body>
+</html>

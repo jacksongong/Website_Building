@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EduCater - Blog</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+    <style>
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            min-width: 160px;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+            z-index: 1;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            top: 100%; /* Position the dropdown below the nav bar */
+            left: 0;
+        }
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+
+        .dropdown-content a {
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+        }
+
+        .dropdown-content a:hover {
+            background-color: #f1f1f1;
+        }
+
+        .dropdown-button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px;
+            border: none;
+            cursor: pointer;
+            font-size: 1em;
+            border-radius: 5px;
+            outline: none;
+            width: 100%;
+            text-align: left;
+        }
+
+        .dropdown-button:hover {
+            background-color: #45a049;
+        }
+
+        .blog-container {
+            max-width: 800px;
+            margin: 50px auto;
+            padding: 20px;
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+        }
+
+        .blog-post {
+            margin-bottom: 40px;
+        }
+
+        .blog-post h2 {
+            color: #4CAF50;
+            margin-bottom: 10px;
+        }
+
+        .blog-post p {
+            color: #666;
+            line-height: 1.6;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="navbar">
+            <div class="left-nav">
+                <ul>
+                    <li class="dropdown">
+                        <a href="world_map.html" class="dropbtn">Explore the Planet <i class="fas fa-chevron-down"></i></a>
+                        <div class="dropdown-content">
+                            <a href="world_map.html">World Map</a>
+                            <a href="us_map.html">United States Map</a>
+                            <a href="#">Help</a>
+                            <a href="#">Selecting your Country</a>
+                        </div>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropbtn">Resources <i class="fas fa-chevron-down"></i></a>
+                        <div class="dropdown-content">
+                            <a href="blog.html">Blog</a>
+                            <a href="resources.html">Education Resources</a>
+                            <a href="faq.html">FAQ</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="logo">
+                <a href="index.html">
+                    <img src="img/educaterlogo.png" alt="EduCater Logo">
+                </a>
+            </div>
+            <div class="right-actions">
+                <div class="actions">
+                    <a href="login.html" class="login">Log In</a>
+                    <a href="register.html" class="signup">Register Now</a>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section class="blog-container">
+            <div class="blog-post">
+                <h2>Welcome to our Blog</h2>
+                <p>EduCater is committed to nurturing a dedicated and academic environment. We are passionate about giving back to highly motivated students and giving our thoughts and advice on things that we wish we had thought through in the past.</p>
+            </div>
+            <div class="blog-post">
+                <h2>Latest Updates</h2>
+                <h3>Will AI ever meet social norms?</h3>
+                <p>To read this article, <a href="/articles/#">click here</a>. Here, we enjoy talk passionately about the implications of artificial intelligence on human society and if and how it can racially discriminate. We also talk about if it can learn and adapt to current social norms which are changing 24/7. There will always be biased chatbots, like a liberal chatbot and a conservative chatbot. Who is up to the job to make sure they do not reciprocate these feelings to users? AI is complicated, let's discuss it!</p>
+            </div>
+            <div class="blog-post">
+                <h2>Education Insights</h2>
+                <p>100% say they learned something from our blog</p>
+                <p>67% say were curious about the topic after reading an article and thoughtfully researched further</p>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 EduCater. All rights reserved.</p>
+    </footer>
+</body>
+</html>

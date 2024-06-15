@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EduCater - Resources</title>
+    <script>
+        function initMap() {
+            if (navigator.geolocation) {
+                navigator.geolocation.getCurrentPosition(function(position) {
+                    var latitude = position.coords.latitude;
+                    var longitude = position.coords.longitude;
+                    var iframe = document.getElementById('mapFrame');
+                    iframe.src = `https://www.google.com/maps?q=school&ll=${latitude},${longitude}&z=14&output=embed`;
+                }, function() {
+                    handleLocationError(true);
+                });
+            } else {
+                handleLocationError(false);
+            }
+        }
+
+        function handleLocationError(browserHasGeolocation) {
+            var errorDiv = document.getElementById('error');
+            errorDiv.textContent = browserHasGeolocation ?
+                'Error: The Geolocation service failed.' :
+                'Error: Your browser doesn\'t support geolocation.';
+        }
+
+        window.onload = initMap;
+    </script>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+    <style>
+
+        .resources-section {
+            background-color: #fff;
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+            margin:120px auto;
+            max-width: 800px;
+        }
+
+        .resources {
+            margin: 10px 0;
+        }
+
+        .resources-question {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px;
+            border: none;
+            width: 100%;
+            text-align: left;
+            cursor: pointer;
+            font-size: 1.1em;
+            border-radius: 5px;
+            outline: none;
+        }
+
+        .resources-answer {
+            padding: 0 18px;
+            background-color: white;
+            overflow: hidden;
+            height: 0;
+            transition: height 0.3s ease-out;
+            margin-top: 0;
+        }
+
+        .resources-answer.show {
+            height: auto;
+            padding: 10px 18px;
+        }
+
+        .contact-form {
+            background-color: #fff;
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+            margin: 20px auto;
+            max-width: 800px;
+        }
+
+        .contact-form h2 {
+            margin-bottom: 20px;
+        }
+
+        .contact-form label {
+            display: block;
+            margin-bottom: 10px;
+            font-weight: bold;
+        }
+
+        .contact-form input,
+        .contact-form textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 20px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+
+        .contact-form button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 1.1em;
+        }
+
+        .contact-form button:hover {
+            background-color: #45a049;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+        }
+
+        footer p {
+            margin: 0;
+        }
+
+        
+    </style>
+</head>
+<body>
+    <header>
+        <div class="navbar">
+            <div class="left-nav">
+                <ul>
+                    <li class="dropdown">
+                        <a href="world_map.html" class="dropbtn">Explore the Planet <i class="fas fa-chevron-down"></i></a>
+                        <div class="dropdown-content">
+                            <a href="world_map.html">World Map</a>
+                            <a href="us_map.html">United States Map</a>
+                            <a href="#">Help</a>
+                            <a href="#">Selecting your Country</a>
+                        </div>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropbtn">Resources <i class="fas fa-chevron-down"></i></a>
+                        <div class="dropdown-content">
+                            <a href="blog.html">Blog</a>
+                            <a href="resources.html">Education Resources</a>
+                            <a href="faq.html">FAQ</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="logo">
+                <a href="index.html">
+                    <img src="img/educaterlogo.png" alt="EduCater Logo">
+                </a>
+            </div>
+            <div class="right-actions">
+                <div class="actions">
+                    <a href="login.html" class="login">Log In</a>
+                    <a href="register.html" class="signup">Register Now</a>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section class="resources-section">
+            <h2>Language Resources for Migrant Children</h2>
+            <div class="resources">
+                <button class="resources-question">Dictionaries</button>
+                <div class="resources-answer">
+                    <p><li><a href="https://www.oed.com/" target="_blank">Oxford English Dictionary (English)</a></li>
+                        <li><a href="https://www.mdbg.net/chinese/dictionary" target="_blank">MDBG Chinese Dictionary (Chinese/Mandarin)</a></li>
+                        <li><a href="https://dle.rae.es/" target="_blank">RAE Dictionary (Spanish)</a></li>
+                        <li><a href="https://jisho.org/" target="_blank">Jisho.org Japanese Dictionary (Japanese)</a></li>
+                        <li><a href="https://en.openrussian.org/" target="_blank">OpenRussian.org (Russian)</a></li>
+                        <li><a href="https://www.dict.cc/" target="_blank">dict.cc German-English Dictionary (German)</a></li>
+                        <li><a href="https://www.shabdkosh.com/" target="_blank">Shabdkosh Hindi-English Dictionary (Hindi)</a></li>
+                        <li><a href="https://www.larousse.fr/dictionnaires/francais-anglais" target="_blank">Larousse French-English Dictionary (French)</a></li></p>
+                </div>
+            </div>
+            <div class="resources">
+                <button class="resources-question">Schools Near You</button>
+                <div class="resources-answer">
+                    <iframe
+                        id="mapFrame"
+                        width="600"
+                        height="450"
+                        style="border:0;"
+                        allowfullscreen=""
+                        loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
+                    <p>If the map does not display, you can view the search results directly on <a href="https://www.google.com/maps/search/school/?entry" target="_blank">Google Maps</a>.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>© 2024 EduCater. All rights reserved.</p>
+    </footer>
+    <script>
+        function toggleDropdown(id) {
+            var element = document.getElementById(id);
+            if (element) {
+                element.style.display = element.style.display === 'block' ? 'none' : 'block';
+            } else {
+                console.error(`Element with id ${id} not found.`);
+            }
+        }
+
+        function initMap() {
+            if (navigator.geolocation) {
+                navigator.geolocation.getCurrentPosition(showSchoolsMap, showError);
+                navigator.geolocation.getCurrentPosition(showUSCISMap, showError);
+            } else {
+                alert("Geolocation is not supported by this browser.");
+            }
+        }
+
+        function showSchoolsMap(position) {
+            var location = { lat: position.coords.latitude, lng: position.coords.longitude };
+            var map = new google.maps.Map(document.getElementById('schools-map'), {
+                center: location,
+                zoom: 12
+            });
+            var service = new google.maps.places.PlacesService(map);
+            service.nearbySearch({
+                location: location,
+                radius: 10000,
+                type: ['school']
+            }, function(results, status) {
+                if (status === google.maps.places.PlacesServiceStatus.OK) {
+                    for (var i = 0; i < results.length; i++) {
+                        createMarker(results[i], map);
+                    }
+                }
+            });
+        }
+
+        function createMarker(place, map) {
+            var marker = new google.maps.Marker({
+                map: map,
+                position: place.geometry.location
+            });
+        }
+
+        function showError(error) {
+            switch (error.code) {
+                case error.PERMISSION_DENIED:
+                    alert("User denied the request for Geolocation.");
+                    break;
+                case error.POSITION_UNAVAILABLE:
+                    alert("Location information is unavailable.");
+                    break;
+                case error.TIMEOUT:
+                    alert("The request to get user location timed out.");
+                    break;
+                case error.UNKNOWN_ERROR:
+                    alert("An unknown error occurred.");
+                    break;
+            }
+        }
+
+        document.addEventListener('DOMContentLoaded', function() {
+            var resourcesQuestions = document.querySelectorAll('.resources-question');
+            resourcesQuestions.forEach(function(question) {
+                question.addEventListener('click', function() {
+                    var answer = this.nextElementSibling;
+                    if (answer.style.height) {
+                        answer.style.height = null;
+                        answer.style.padding = "0 18px";
+                    } else {
+                        answer.style.height = answer.scrollHeight + "px";
+                        answer.style.padding = "10px 18px";
+                    }
+                    answer.classList.toggle('show');
+                });
+            });
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EduCater - FAQ</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <style>
+
+        .faq-section {
+            background-color: #fff;
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+            margin: 20px auto;
+            max-width: 800px;
+        }
+
+        .faq {
+            margin: 10px 0;
+        }
+
+        .faq-question {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px;
+            border: none;
+            width: 100%;
+            text-align: left;
+            cursor: pointer;
+            font-size: 1.1em;
+            border-radius: 5px;
+            outline: none;
+        }
+
+        .faq-answer {
+            padding: 0 18px;
+            background-color: white;
+            overflow: hidden;
+            height: 0;
+            transition: height 0.3s ease-out, padding 0.3s ease-out;
+            margin-top: 0;
+            font-size: 1em;
+        }
+
+        .faq-answer.show {
+            height: auto;
+            padding: 10px 18px;
+        }
+
+        .contact-form {
+            background-color: #fff;
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+            margin: 20px auto;
+            max-width: 800px;
+        }
+
+        .contact-form h2 {
+            margin-bottom: 20px;
+        }
+
+        .contact-form label {
+            display: block;
+            margin-bottom: 10px;
+            font-weight: bold;
+        }
+
+        .contact-form input,
+        .contact-form textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 20px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+
+        .contact-form button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 1.1em;
+        }
+
+        .contact-form button:hover {
+            background-color: #45a049;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+        }
+
+        footer p {
+            margin: 0;
+        }
+
+        .content-margin {
+            margin-top: 120px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="navbar">
+            <div class="left-nav">
+                <ul>
+                    <li class="dropdown">
+                        <a href="world_map.html" class="dropbtn">Explore the Planet <i class="fas fa-chevron-down"></i></a>
+                        <div class="dropdown-content">
+                            <a href="world_map.html">World Map</a>
+                            <a href="us_map.html">United States Map</a>
+                            <a href="#">Help</a>
+                            <a href="#">Selecting your Country</a>
+                        </div>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropbtn">Resources <i class="fas fa-chevron-down"></i></a>
+                        <div class="dropdown-content">
+                            <a href="blog.html">Blog</a>
+                            <a href="resources.html">Education Resources</a>
+                            <a href="faq.html">FAQ</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="logo">
+                <a href="index.html">
+                    <img src="img/educaterlogo.png" alt="EduCater Logo">
+                </a>
+            </div>
+            <div class="right-actions">
+                <div class="actions">
+                    <a href="login.html" class="login">Log In</a>
+                    <a href="register.html" class="signup">Register Now</a>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main class="content-margin">
+        <section class="faq-section">
+            <h2>Frequently Asked Questions</h2>
+            <div class="faq">
+                <button class="faq-question">What is EduCater?</button>
+                <div class="faq-answer">
+                    <p>EduCater is a platform that provides continuous and personalized education for migrant children, overcoming challenges like frequent relocations and language barriers.</p>
+                </div>
+            </div>
+            <div class="faq">
+                <button class="faq-question">How does EduCater help migrant children?</button>
+                <div class="faq-answer">
+                    <p>EduCater offers multi-language support, portable student profiles, personalized learning plans, community building features, and social skills development modules, as well as various other features, like video game tutorials.</p>
+                </div>
+            </div>
+            <div class="faq">
+                <button class="faq-question">Can parents track their child's progress?</button>
+                <div class="faq-answer">
+                    <p>Unfortunately, EduCater does not yet have a parent portal to monitor their children, but it is in the works. For now, parents should make their kid's account or gain access information to the account to monitor progress through the child's account.</p>
+                </div>
+            </div>
+            <div class="faq">
+                <button class="faq-question">How can I access the language resources?</button>
+                <div class="faq-answer">
+                    <p>You can access our language resources by visiting the <a href="resources.html">Resources</a> page and selecting the appropriate dictionary or tool for your needs.</p>
+                </div>
+            </div>
+            <div class="faq">
+                <button class="faq-question">Is EduCater free to use?</button>
+                <div class="faq-answer">
+                    <p>Yes, EduCater is completely free to use. Our mission is to provide accessible educational support to all migrant children and their families. Keeping EduCater online is costly to the developers, from website hosting to database space. Donations are appreciated, but not required.</p>
+                </div>
+            </div>
+            <div class="faq">
+                <button class="faq-question">Who can I contact to reach out for more information?</button>
+                <div class="faq-answer">
+                    <p>If you need more information, you can fill out the contact form below.</p>
+                </div>
+            </div>
+        </section>
+        <section class="contact-form">
+            <h2>Contact Us</h2>
+            <form action="submit_form.php" method="POST">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" required>
+                
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required>
+                
+                <label for="message">Message</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
+                
+                <button type="submit">Submit</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 EduCater. All rights reserved.</p>
+    </footer>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            var faqQuestions = document.querySelectorAll('.faq-question');
+            faqQuestions.forEach(function(question) {
+                question.addEventListener('click', function() {
+                    var answer = this.nextElementSibling;
+                    if (answer.classList.contains('show')) {
+                        answer.style.height = 0;
+                        answer.style.paddingTop = "0";
+                        answer.style.paddingBottom = "0";
+                        answer.classList.remove('show');
+                    } else {
+                        answer.style.height = answer.scrollHeight + "px";
+                        answer.style.paddingTop = "10px";
+                        answer.style.paddingBottom = "10px";
+                        answer.classList.add('show');
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+
+</html>
